@@ -29,13 +29,6 @@ node* Node_alloc(char letter, long unsigned int count, int isEndWord) {
 	return NULL;
 }
 
-void Node_free(node* n) {
-	if (n != NULL){
-		free(n);
-	}
-	return;
-}
-
 
 void TRIE_insert(node** head,char* str){
     int i=0;
@@ -88,6 +81,7 @@ void print_TRIE(node** head,char word[], int level, int regular){
 			}
 		}
 	}
+	free(runner); 
 }
 
 void freeTrie(node** head){
