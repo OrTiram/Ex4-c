@@ -61,7 +61,7 @@ void print_TRIE(node** head,char word[], int level, int regular){
 	}
     if(runner->isEndWord){
         word[level]='\0';
-        printf("%s %ld",word,runner->count);
+        printf("%s %ld\n",word,runner->count);
     }
 	
 	if(regular){
