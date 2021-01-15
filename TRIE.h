@@ -1,3 +1,5 @@
+#ifndef TRIE_H
+#define TRIE_H
 #include <stdlib.h>
 #define NUM_LETTERS ((int)26)
 #define Char_To_Index(c) ((int)c - (int)'a')
@@ -10,3 +12,5 @@ void Node_free(node* n);
 void TRIE_insert(node** head,char* str);
 void print_TRIE(node** head,char word[], int level, int regular);
 void freeTrie(node** head);
+
+#endif
