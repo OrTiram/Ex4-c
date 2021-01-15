@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #define NUM_LETTERS ((int)26)
-#define LONGEST_WORD 50
 #define Char_To_Index(c) ((int)c - (int)'a')
 
 
